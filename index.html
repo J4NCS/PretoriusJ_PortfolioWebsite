@@ -40,9 +40,18 @@
 	  border-radius: 8px;
 	  position: relative;
 	}
+
+    #about .overlay {
+	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
+	  padding: 2rem;
+	  border-radius: 8px;
+	  background-blend-mode: darken;
+	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+	  color: white;
+	}
 	
-	/* Background image for the Projects section */
-	#projects {
+	/* Background image for the Experience section */
+	#project {
 	  background-color: #fff; /* fallback */
 	  padding: 2rem;
 	  margin: 1rem;
@@ -50,8 +59,62 @@
 	  position: relative;
 	}
 
-    #about .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
+    #project .overlay {
+	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%202.jpg?raw=true') center/cover no-repeat;
+	  padding: 2rem;
+	  border-radius: 8px;
+	  background-blend-mode: darken;
+	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+	  color: white;
+	}
+	
+	/* Background image for the Skills section */
+	#skills {
+	  background-color: #fff; /* fallback */
+	  padding: 2rem;
+	  margin: 1rem;
+	  border-radius: 8px;
+	  position: relative;
+	}
+
+    #skills .overlay {
+	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%203.jpg?raw=true') center/cover no-repeat;
+	  padding: 2rem;
+	  border-radius: 8px;
+	  background-blend-mode: darken;
+	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+	  color: white;
+	}
+	
+	/* Background image for the Education section */
+	#education {
+	  background-color: #fff; /* fallback */
+	  padding: 2rem;
+	  margin: 1rem;
+	  border-radius: 8px;
+	  position: relative;
+	}
+
+    #education .overlay {
+	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%204.jpg?raw=true') center/cover no-repeat;
+	  padding: 2rem;
+	  border-radius: 8px;
+	  background-blend-mode: darken;
+	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+	  color: white;
+	}
+	
+	/* Background image for the Contact section */
+	#contact {
+	  background-color: #fff; /* fallback */
+	  padding: 2rem;
+	  margin: 1rem;
+	  border-radius: 8px;
+	  position: relative;
+	}
+
+    #contact .overlay {
+	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%205.jpg?raw=true') center/cover no-repeat;
 	  padding: 2rem;
 	  border-radius: 8px;
 	  background-blend-mode: darken;
@@ -87,25 +150,72 @@
   </section>
 
   <section id="projects">
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>Database Engineer</strong> — IT Infrastructure, Capricorn Group (2024–Present)</li>
-      <li><strong>Service Desk Agent</strong> — IT Infrastructure, Capricorn Group (2023–2024)</li>
-      <li><strong>Senior & Agency Teller</strong> — Bank Windhoek, Main Branch (2020–2023)</li>
-      <li><strong>Reconciliations Officer</strong> — Bank Windhoek, Electronic Channels (2019)</li>
-      <li><strong>Agency Teller</strong> — Bank Windhoek, Main Branch (2018)</li>
-      <li><strong>Substitute Teacher (Mathematics)</strong> — Welwitchia Private School (2017)</li>
-    </ul>
+	<div class="overlay">
+		<h2>Work Experience</h2>
+		<ul>
+		  <li><strong>Database Engineer</strong> — IT Infrastructure, Capricorn Group (2024–Present)</li>
+		  <li><strong>Service Desk Agent</strong> — IT Infrastructure, Capricorn Group (2023–2024)</li>
+		  <li><strong>Senior & Agency Teller</strong> — Bank Windhoek, Main Branch (2020–2023)</li>
+		  <li><strong>Reconciliations Officer</strong> — Bank Windhoek, Electronic Channels (2019)</li>
+		  <li><strong>Agency Teller</strong> — Bank Windhoek, Main Branch (2018)</li>
+		  <li><strong>Substitute Teacher (Mathematics)</strong> — Welwitchia Private School (2017)</li>
+		</ul>
+	</div>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Advanced Information Systems Knowledge</li>
-      <li>Database Engineering</li>
-      <li>Software Engineering</li>
-      <li>Financial Competency</li>
-      <li>Team Player & Communication</li>
-      <li>AI Tools (e.g. ChatGPT)</li>
-      <li>Languages: Python, C#, C++, Java, HTML, SQL, XML</li>
-      <li>Tools: Active Directory,
+	<div class="overlay">
+		<h2>Skills</h2>
+		<ul>
+		  <li>Advanced Information Systems Knowledge</li>
+		  <li>Database Engineering</li>
+		  <li>Software Engineering</li>
+		  <li>Financial Competency</li>
+		  <li>Team Player & Communication</li>
+		  <li>AI Tools (e.g. ChatGPT)</li>
+		  <li>Languages: Python, C#, C++, Java, HTML, SQL, XML</li>
+		  <li>Tools: Active Directory, Phoenix, Postillion, SAP, Oracle, Visual Studio, SQL Server Management Studio, GitHub, IntelliJ, Eclipse, Manage Engine</li>
+		</ul>
+	</div>
+  </section>
+
+  <section id="education">
+	<div class="overlay">
+		<h2>Education & Certifications</h2>
+		<ul>
+		  <li><strong>BSc Information Technology</strong> — North West University (2022–2025)</li>
+		  <li><strong>Matriculated</strong> — Windhoek Gymnasium (2016)</li>
+		  <li><strong>Short Courses:</strong>
+			<ul>
+			  <li>BW Learning & Development: Duty of Care & Teller</li>
+			  <li>Regent Business School: Introduction to Data Analytics</li>
+			  <li>Careers 365: The Complete Investment Banking Course</li>
+			  <li>Capricorn Group: Multiple Training Modules</li>
+			</ul>
+		  </li>
+		  <li><strong>Core IT Subjects Completed:</strong>
+			<ul>
+			  <li>OOP, Advanced UI Programming, Data Structures & Algorithms</li>
+			  <li>System Analysis & Design I & II</li>
+			  <li>Databases, Networks, Information Security</li>
+			  <li>AI, Decision Support Systems</li>
+			</ul>
+		  </li>
+		</ul>
+	</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:jancopretorius@gmail.com">jancopretorius@gmail.com</a><br>
+      Cell: <a href="tel:+264818895282">+264 81 889 5282</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/janco-pretorius-03833b351" target="_blank">linkedin.com/in/janco-pretorius</a>
+    </p>
+  </section>
+
+  <footer>
+    <p style="text-align:center; color:white; padding: 1rem;">© 2025 Janco Pretorius</p>
+  </footer>
+</body>
+</html>Directory,
