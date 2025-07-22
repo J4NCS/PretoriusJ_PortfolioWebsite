@@ -20,6 +20,20 @@
 				text-align: center;
 			}
 
+			header h1 {
+  				animation: pulse 2s infinite;
+  				text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff;
+			}
+
+			@keyframes pulse {
+				0%, 100% {
+					text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff;
+				}
+				50% {
+					text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+				}
+			}
+
 			nav a {
 				margin: 0 1rem;
 				color: white;
@@ -107,7 +121,7 @@
 			}
 
 			#about .overlay {
-				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%203.jpg?raw=true') center/cover no-repeat;
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
@@ -143,7 +157,7 @@
 			}
 
 			#skills .overlay {
-				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%203.jpg?raw=true') center/cover no-repeat;
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
