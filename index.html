@@ -112,6 +112,42 @@
 				}
 			}
 
+			.job {
+				margin-bottom: 2rem;
+				border-left: 3px solid #00c6ff;
+				padding-left: 1rem;
+				position: relative;
+			}
+
+			.job h3 {
+				margin: 0.2rem 0;
+				font-size: 1.2rem;
+			}
+
+			.job-date {
+				font-size: 0.9rem;
+				color: #ccc;
+			}
+
+			.job p {
+				margin: 0.5rem 0;
+				line-height: 1.5;
+			}
+
+			.tech-stack {
+				margin-top: 0.5rem;
+			}
+
+			.tech-stack span {
+				display: inline-block;
+				background: #00c6ff;
+				color: white;
+				padding: 4px 10px;
+				margin: 2px;
+				border-radius: 20px;
+				font-size: 0.8rem;
+			}
+
 			/* Background image for the About Me section */
 			#about {
 				background-color: #fff; /* fallback */
@@ -233,17 +269,64 @@
   			<img src="https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/JancoImage.jpg?raw=true" alt="Janco Pretorius" class="profile-img">
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="side-section">
 			<div class="overlay">
 				<h2>Work Experience</h2>
-				<ul>
-					<li><strong>Database Engineer</strong> - IT Infrastructure, Capricorn Group (2024–Present)</li>
-					<li><strong>Service Desk Agent</strong> - IT Infrastructure, Capricorn Group (2023–2024)</li>
-					<li><strong>Senior & Agency Teller</strong> - Bank Windhoek, Main Branch (2020–2023)</li>
-					<li><strong>Reconciliations Officer</strong> - Bank Windhoek, Electronic Channels (2019)</li>
-					<li><strong>Agency Teller</strong> - Bank Windhoek, Main Branch (2018)</li>
-					<li><strong>Substitute Teacher (Mathematics)</strong> - Welwitchia Private School (2017)</li>
-				</ul>
+				<div class="job">
+					<h3>Database Engineer – Capricorn Group</h3>
+					<span class="job-date">Nov 2024 – Present</span>
+					<p>Managing database systems in a multi-country, multi-domain financial environment.</p>
+					<div class="tech-stack">
+						<span>Oracle</span>
+						<span>SQL Server</span>
+						<span>PostgreSQL</span>
+						<span>Backup Automation</span>
+					</div>
+				</div>
+
+				<div class="job">
+					<h3>IT Support Specialist – Capricorn Group</h3>
+					<span class="job-date">Jun 2023 – Oct 2024</span>
+					<p>Handled Active Directory issues, did SAP IT Procurement, and provided user support.</p>
+					<div class="tech-stack">
+						<span>Active Directory</span>
+						<span>ManageEngine</span>
+						<span>SAP</span>
+					</div>
+				</div>
+
+				<div class="job">
+					<h3>Senior Bank Teller – Bank Windhoek</h3>
+					<span class="job-date">Nov 2020 – May 2023</span>
+					<p>Executed senior cash handling duties, served clients a point-of-contact.</p>
+					<div class="tech-stack">
+						<span>Phoenix</span>
+						<span>Cash Handling</span>
+						<span>Client Service</span>
+					</div>
+				</div>
+
+				<div class="job">
+					<h3>Bank Reconciliations – Bank Windhoek</h3>
+					<span class="job-date">Oct 2019 – Oct 2020</span>
+					<p>Managed in-house ledger accounts, prepared reports for accountants, and account Reconciliations.</p>
+					<div class="tech-stack">
+						<span>General Ledgers</span>
+						<span>Financial Reporting</span>
+						<span>Reconciliations</span>
+					</div>
+				</div>
+
+				<div class="job">
+					<h3>Bank Teller – Bank Windhoek</h3>
+					<span class="job-date">May 2018 – Sep 2019</span>
+					<p>Executed cash handling duties, served clients a point-of-contact.</p>
+					<div class="tech-stack">
+						<span>Phoenix</span>
+						<span>Cash Handling</span>
+						<span>Client Service</span>
+					</div>
+				</div>
 			</div>
 		</section>
 
