@@ -1,272 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Janco Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #756f6f;
-      color: #333;
-    }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Janco Portfolio</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background: #756f6f;
+				color: #333;
+			}
 
-    header {
-      background: #2ecad0;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
+			header {
+				background: #2ecad0;
+				color: white;
+				padding: 1rem;
+				text-align: center;
+			}
 
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-    }
+			nav a {
+				margin: 0 1rem;
+				color: white;
+				text-decoration: none;
+			}
 
-    section {
-      padding: 2rem;
-      margin: 1rem;
-      border-radius: 8px;
-    }
-	
-	.skill {
-		margin-bottom: 1.5rem;
-	}
+			section {
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+			}
+			
+			.skill {
+				margin-bottom: 1.5rem;
+			}
 
-	.skill span {
-	  font-weight: bold;
-	  display: block;
-	  margin-bottom: 0.5rem;
-	}
+			.skill span {
+				font-weight: bold;
+				display: block;
+				margin-bottom: 0.5rem;
+			}
 
-	.skill-bar {
-	  background: #333;
-	  border-radius: 30px;
-	  overflow: hidden;
-	  height: 24px;
-	}
+			.skill-bar {
+				background: #333;
+				border-radius: 30px;
+				overflow: hidden;
+				height: 24px;
+			}
 
-	.skill-level {
-	  background: linear-gradient(to right, #00c6ff, #0072ff);
-	  height: 100%;
-	  text-align: right;
-	  padding-right: 10px;
-	  color: white;
-	  font-weight: bold;
-	  line-height: 24px;
-	  border-radius: 30px;
-	  transition: width 1s ease-in-out;
-	}
+			.skill-level {
+				background: linear-gradient(to right, #00c6ff, #0072ff);
+				height: 100%;
+				text-align: right;
+				padding-right: 10px;
+				color: white;
+				font-weight: bold;
+				line-height: 24px;
+				border-radius: 30px;
+				transition: width 1s ease-in-out;
+			}
 
-    /* Background image for the About Me section */
-	#about {
-	  background-color: #fff; /* fallback */
-	  padding: 2rem;
-	  margin: 1rem;
-	  border-radius: 8px;
-	  position: relative;
-	}
+			/* Background image for the About Me section */
+			#about {
+				background-color: #fff; /* fallback */
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+				position: relative;
+			}
 
-    #about .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
-	  padding: 2rem;
-	  border-radius: 8px;
-	  background-blend-mode: darken;
-	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
-	  color: white;
-	}
-	
-	/* Background image for the Experience section */
-	#projects {
-	  background-color: #fff; /* fallback */
-	  padding: 2rem;
-	  margin: 1rem;
-	  border-radius: 8px;
-	  position: relative;
-	}
+			#about .overlay {
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%201.jpg?raw=true') center/cover no-repeat;
+				padding: 2rem;
+				border-radius: 8px;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				color: white;
+			}
+			
+			/* Background image for the Experience section */
+			#projects {
+				background-color: #fff; /* fallback */
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+				position: relative;
+			}
 
-    #projects .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%202.jpg?raw=true') center/cover no-repeat;
-	  padding: 2rem;
-	  border-radius: 8px;
-	  background-blend-mode: darken;
-	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
-	  color: white;
-	}
-	
-	/* Background image for the Skills section */
-	#skills {
-	  background-color: #fff; /* fallback */
-	  padding: 2rem;
-	  margin: 1rem;
-	  border-radius: 8px;
-	  position: relative;
-	}
+			#projects .overlay {
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%202.jpg?raw=true') center/cover no-repeat;
+				padding: 2rem;
+				border-radius: 8px;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				color: white;
+			}
+			
+			/* Background image for the Skills section */
+			#skills {
+				background-color: #fff; /* fallback */
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+				position: relative;
+			}
 
-    #skills .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%203.jpg?raw=true') center/cover no-repeat;
-	  padding: 2rem;
-	  border-radius: 8px;
-	  background-blend-mode: darken;
-	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
-	  color: white;
-	}
-	
-	/* Background image for the Education section */
-	#education {
-	  background-color: #fff; /* fallback */
-	  padding: 2rem;
-	  margin: 1rem;
-	  border-radius: 8px;
-	  position: relative;
-	}
+			#skills .overlay {
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%203.jpg?raw=true') center/cover no-repeat;
+				padding: 2rem;
+				border-radius: 8px;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				color: white;
+			}
+			
+			/* Background image for the Education section */
+			#education {
+				background-color: #fff; /* fallback */
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+				position: relative;
+			}
 
-    #education .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%204.jpg?raw=true') center/cover no-repeat;
-	  padding: 2rem;
-	  border-radius: 8px;
-	  background-blend-mode: darken;
-	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
-	  color: white;
-	}
-	
-	/* Background image for the Contact section */
-	#contact {
-	  background-color: #fff; /* fallback */
-	  padding: 2rem;
-	  margin: 1rem;
-	  border-radius: 8px;
-	  position: relative;
-	}
+			#education .overlay {
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%204.jpg?raw=true') center/cover no-repeat;
+				padding: 2rem;
+				border-radius: 8px;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				color: white;
+			}
+			
+			/* Background image for the Contact section */
+			#contact {
+				background-color: #fff; /* fallback */
+				padding: 2rem;
+				margin: 1rem;
+				border-radius: 8px;
+				position: relative;
+			}
 
-    #contact .overlay {
-	  background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%205.jpg?raw=true') center/cover no-repeat;
-	  padding: 2rem;
-	  border-radius: 8px;
-	  background-blend-mode: darken;
-	  background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
-	  color: white;
-	}
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Janco Pretorius</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+			#contact .overlay {
+				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%205.jpg?raw=true') center/cover no-repeat;
+				padding: 2rem;
+				border-radius: 8px;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				color: white;
+			}
+		</style>
+	</head>
 
-  <section id="about">
-    <div class="overlay">
-      <h2>About Me</h2>
-      <p>I am a disciplined, ambitious, and fast-learning IT professional with a strong foundation in database engineering and a 
-        passion for continuous growth. My journey—from education and banking to IT infrastructure—demonstrates a consistent drive to expand my skill set and take on 
-        new challenges. With a BSc in Information Technology in progress and hands-on experience as a Service Desk Agent and Database Engineer at Capricorn Group, I 
-        bring a unique blend of technical knowledge, analytical thinking, and customer-focused support.
-        <br><br>My experience in both financial services and IT operations 
-        has honed my attention to detail, adaptability, and reliability. I pride myself on having sober habits, strong values, and unwavering loyalty. Known for being 
-        proactive and eager to learn, I thrive in dynamic, forward-thinking environments where I can contribute meaningfully and grow alongside the team.
-      </p>
-    </div>
-  </section>
+	<body>
+		<header>
+			<h1>Janco Pretorius</h1>
+			<nav>
+				<a href="#about">About Me</a>
+				<a href="#projects">Experience</a>
+				<a href="#skills">Skills</a>
+				<a href="#education">Education</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
 
-  <section id="projects">
-	<div class="overlay">
-		<h2>Work Experience</h2>
-		<ul>
-		  <li><strong>Database Engineer</strong> — IT Infrastructure, Capricorn Group (2024–Present)</li>
-		  <li><strong>Service Desk Agent</strong> — IT Infrastructure, Capricorn Group (2023–2024)</li>
-		  <li><strong>Senior & Agency Teller</strong> — Bank Windhoek, Main Branch (2020–2023)</li>
-		  <li><strong>Reconciliations Officer</strong> — Bank Windhoek, Electronic Channels (2019)</li>
-		  <li><strong>Agency Teller</strong> — Bank Windhoek, Main Branch (2018)</li>
-		  <li><strong>Substitute Teacher (Mathematics)</strong> — Welwitchia Private School (2017)</li>
-		</ul>
-	</div>
-  </section>
+		<section id="about" class="side-section">
+  			<div class="overlay about-text">
+    			<h2>About Me</h2>
+    			<p>
+				I am a disciplined, ambitious, and fast-learning IT professional with a strong foundation in database engineering and a 
+				passion for continuous growth. My journey from education and banking to IT infrastructure demonstrates a consistent drive to expand my skill set and take on 
+				new challenges. With a BSc in Information Technology in progress and hands-on experience as a Service Desk Agent and Database Engineer at Capricorn Group, I 
+				bring a unique blend of technical knowledge, analytical thinking, and customer-focused support.
+				<br><br>
+				My experience in both financial services and IT operations 
+				has honed my attention to detail, adaptability, and reliability. I pride myself on having sober habits, strong values, and unwavering loyalty. Known for being 
+				proactive and eager to learn, I thrive in dynamic, forward-thinking environments where I can contribute meaningfully and grow alongside the team.
+    			</p>
+  			</div>
+  			<img src="https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/JancoImage.jpg?raw=true" alt="Janco Pretorius" class="profile-img">
+		</section>
 
-  <section id="skills">
-	<div class="overlay">
-		<h2>Skills</h2>
-		<div class="skill">
-		  <span>Organisational Collaboration</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
-		</div>
-		
-		<div class="skill">
-		  <span>Industry Software: Active Directory, Oracle, GitHub</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
-		</div>
-		
-		<div class="skill">
-		  <span>Information Systems</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
-		</div>
-		
-		<div class="skill">
-		  <span>Artificial Intelligence Utilization</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
-		</div>
+		<section id="projects" class="side-section">
+			<img src="your-image-url.jpg" alt="Janco Pretorius" class="profile-img">
+			<div class="overlay">
+				<h2>Work Experience</h2>
+				<ul>
+					<li><strong>Database Engineer</strong> - IT Infrastructure, Capricorn Group (2024–Present)</li>
+					<li><strong>Service Desk Agent</strong> - IT Infrastructure, Capricorn Group (2023–2024)</li>
+					<li><strong>Senior & Agency Teller</strong> - Bank Windhoek, Main Branch (2020–2023)</li>
+					<li><strong>Reconciliations Officer</strong> - Bank Windhoek, Electronic Channels (2019)</li>
+					<li><strong>Agency Teller</strong> - Bank Windhoek, Main Branch (2018)</li>
+					<li><strong>Substitute Teacher (Mathematics)</strong> - Welwitchia Private School (2017)</li>
+				</ul>
+			</div>
+		</section>
 
-		<div class="skill">
-		  <span>Financial Systems</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
-		</div>
+		<section id="skills">
+			<div class="overlay">
+				<h2>Skills</h2>
+				<div class="skill">
+					<span>Organizational Collaboration</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
+				</div>
+			
+				<div class="skill">
+					<span>Industry Software: Active Directory, Oracle, GitHub</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+				</div>
+			
+				<div class="skill">
+					<span>Information Systems</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+				</div>
+			
+				<div class="skill">
+					<span>Artificial Intelligence Utilization</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
+				</div>
 
-		<div class="skill">
-		  <span>Coding: Python, Java, SQL, HTML</span>
-		  <div class="skill-bar"><div class="skill-level" style="width: 75%;">75%</div></div>
-		</div>
-		
-	</div>
-  </section>
+				<div class="skill">
+					<span>Financial Systems</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
+				</div>
 
-  <section id="education">
-	<div class="overlay">
-		<h2>Education & Certifications</h2>
-		<ul>
-		  <li><strong>BSc Information Technology</strong> — North West University (2022–2025)</li>
-		  <li><strong>Matriculated</strong> — Windhoek Gymnasium (2016)</li>
-		  <li><strong>Short Courses:</strong>
-			<ul>
-			  <li>BW Learning & Development: Duty of Care & Teller</li>
-			  <li>Regent Business School: Introduction to Data Analytics</li>
-			  <li>Careers 365: The Complete Investment Banking Course</li>
-			  <li>Capricorn Group: Multiple Training Modules</li>
-			</ul>
-		  </li>
-		  <li><strong>Core IT Subjects Completed:</strong>
-			<ul>
-			  <li>OOP, Advanced UI Programming, Data Structures & Algorithms</li>
-			  <li>System Analysis & Design I & II</li>
-			  <li>Databases, Networks, Information Security</li>
-			  <li>AI, Decision Support Systems</li>
-			</ul>
-		  </li>
-		</ul>
-	</div>
-  </section>
+				<div class="skill">
+					<span>Coding: Python, Java, SQL, HTML</span>
+					<div class="skill-bar"><div class="skill-level" style="width: 75%;">75%</div></div>
+				</div>
+			</div>
+		</section>
 
-  <section id="contact">
-	<div class="overlay">
-		<h2>Contact</h2>
-		<p>
-		  Email: <a href="mailto:jancopretorius@gmail.com">jancopretorius@gmail.com</a><br>
-		  Cell: <a href="tel:+264818895282">+264 81 889 5282</a><br>
-		  LinkedIn: <a href="https://www.linkedin.com/in/janco-pretorius-03833b351" target="_blank">linkedin.com/in/janco-pretorius</a>
-		</p>
-	</div>
-  </section>
+		<section id="education">
+			<div class="overlay">
+				<h2>Education & Certifications</h2>
+				<ul>
+					<li><strong>BSc Information Technology</strong> — North West University (2022–2025)</li>
+					<li><strong>Matriculated</strong> — Windhoek Gymnasium (2016)</li>
+					<li><strong>Short Courses:</strong>
+						<ul>
+							<li>BW Learning & Development: Duty of Care & Teller</li>
+							<li>Regent Business School: Introduction to Data Analytics</li>
+							<li>Careers 365: The Complete Investment Banking Course</li>
+							<li>Capricorn Group: Multiple Training Modules</li>
+						</ul>
+					</li>
+					<li><strong>Core IT Subjects Completed:</strong>
+						<ul>
+							<li>OOP, Advanced UI Programming, Data Structures & Algorithms</li>
+							<li>System Analysis & Design I & II</li>
+							<li>Databases, Networks, Information Security</li>
+							<li>AI, Decision Support Systems</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-  <footer>
-    <p style="text-align:center; color:white; padding: 1rem;">© 2025 Janco Pretorius</p>
-  </footer>
-</body>
+		<section id="contact">
+			<div class="overlay">
+				<h2>Contact</h2>
+				<p>
+				Email: <a href="mailto:jancopretorius@gmail.com">jancopretorius@gmail.com</a><br>
+				Cell: <a href="tel:+264818895282">+264 81 889 5282</a><br>
+				LinkedIn: <a href="https://www.linkedin.com/in/janco-pretorius-03833b351" target="_blank">linkedin.com/in/janco-pretorius</a>
+				</p>
+			</div>
+		</section>
+
+		<footer>
+			<p style="text-align:center; color:white; padding: 1rem;">© 2025 Janco Pretorius</p>
+		</footer>
+	</body>
 </html>Directory,
