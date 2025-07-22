@@ -14,7 +14,7 @@
 			}
 
 			header {
-				background: #2ecad0;
+				background: #0d1762ff;
 				color: white;
 				padding: 1rem;
 				text-align: center;
@@ -59,6 +59,42 @@
 				line-height: 24px;
 				border-radius: 30px;
 				transition: width 1s ease-in-out;
+			}
+
+			/* Flex layout for about section */
+			.side-section {
+  				display: flex;
+  				flex-wrap: wrap;
+  				align-items: center;
+  				justify-content: space-between;
+  				gap: 2rem;
+			}
+
+			/* Control the text side */
+			.about-text {
+				flex: 1 1 60%;
+			}
+
+			/* Reuse profile-img class */
+			.profile-img {
+				width: 250px;
+				height: auto;
+				border-radius: 20px;
+				object-fit: cover;
+				box-shadow: 0 0 15px rgba(0,0,0,0.5);
+			}
+
+			/* Make it responsive */
+			@media screen and (max-width: 768px) {
+				.side-section {
+					flex-direction: column;
+					text-align: center;
+				}
+
+				.profile-img {
+					width: 80%;
+					margin-top: 1rem;
+				}
 			}
 
 			/* Background image for the About Me section */
