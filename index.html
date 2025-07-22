@@ -14,15 +14,15 @@
     }
 
     header {
-      background: rgb(12, 9, 99);
-      color: #fff;
+      background: #2ecad0;
+      color: white;
       padding: 1rem;
       text-align: center;
     }
 
     nav a {
       margin: 0 1rem;
-      color: #fff;
+      color: white;
       text-decoration: none;
     }
 
@@ -31,6 +31,35 @@
       margin: 1rem;
       border-radius: 8px;
     }
+	
+	.skill {
+		margin-bottom: 1.5rem;
+	}
+
+	.skill span {
+	  font-weight: bold;
+	  display: block;
+	  margin-bottom: 0.5rem;
+	}
+
+	.skill-bar {
+	  background: #333;
+	  border-radius: 30px;
+	  overflow: hidden;
+	  height: 24px;
+	}
+
+	.skill-level {
+	  background: linear-gradient(to right, #00c6ff, #0072ff);
+	  height: 100%;
+	  text-align: right;
+	  padding-right: 10px;
+	  color: white;
+	  font-weight: bold;
+	  line-height: 24px;
+	  border-radius: 30px;
+	  transition: width 1s ease-in-out;
+	}
 
     /* Background image for the About Me section */
 	#about {
@@ -139,7 +168,7 @@
     <div class="overlay">
       <h2>About Me</h2>
       <p>I am a disciplined, ambitious, and fast-learning IT professional with a strong foundation in database engineering and a 
-        passion for continuous growth. My journey from education and banking to IT infrastructure demonstrates a consistent drive to expand my skill set and take on 
+        passion for continuous growth. My journey—from education and banking to IT infrastructure—demonstrates a consistent drive to expand my skill set and take on 
         new challenges. With a BSc in Information Technology in progress and hands-on experience as a Service Desk Agent and Database Engineer at Capricorn Group, I 
         bring a unique blend of technical knowledge, analytical thinking, and customer-focused support.
         <br><br>My experience in both financial services and IT operations 
@@ -153,12 +182,12 @@
 	<div class="overlay">
 		<h2>Work Experience</h2>
 		<ul>
-		  <li><strong>Database Engineer</strong> - IT Infrastructure, Capricorn Group (2024–Present)</li>
-		  <li><strong>Service Desk Agent</strong> - IT Infrastructure, Capricorn Group (2023–2024)</li>
-		  <li><strong>Senior & Agency Teller</strong> - Bank Windhoek, Main Branch (2020–2023)</li>
-		  <li><strong>Reconciliations Officer</strong> - Bank Windhoek, Electronic Channels (2019)</li>
-		  <li><strong>Agency Teller</strong> - Bank Windhoek, Main Branch (2018)</li>
-		  <li><strong>Substitute Teacher (Mathematics)</strong> - Welwitchia Private School (2017)</li>
+		  <li><strong>Database Engineer</strong> — IT Infrastructure, Capricorn Group (2024–Present)</li>
+		  <li><strong>Service Desk Agent</strong> — IT Infrastructure, Capricorn Group (2023–2024)</li>
+		  <li><strong>Senior & Agency Teller</strong> — Bank Windhoek, Main Branch (2020–2023)</li>
+		  <li><strong>Reconciliations Officer</strong> — Bank Windhoek, Electronic Channels (2019)</li>
+		  <li><strong>Agency Teller</strong> — Bank Windhoek, Main Branch (2018)</li>
+		  <li><strong>Substitute Teacher (Mathematics)</strong> — Welwitchia Private School (2017)</li>
 		</ul>
 	</div>
   </section>
@@ -166,16 +195,36 @@
   <section id="skills">
 	<div class="overlay">
 		<h2>Skills</h2>
-		<ul>
-		  <li>Advanced Information Systems Knowledge</li>
-		  <li>Database Engineering</li>
-		  <li>Software Engineering</li>
-		  <li>Financial Competency</li>
-		  <li>Team Player & Communication</li>
-		  <li>AI Tools (e.g. ChatGPT)</li>
-		  <li>Languages: Python, C#, C++, Java, HTML, SQL, XML</li>
-		  <li>Tools: Active Directory, Phoenix, Postillion, SAP, Oracle, Visual Studio, SQL Server Management Studio, GitHub, IntelliJ, Eclipse, Manage Engine</li>
-		</ul>
+		<div class="skill">
+		  <span>Organisational Collaboration</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
+		</div>
+		
+		<div class="skill">
+		  <span>Industry Software: Active Directory, Oracle, GitHub</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+		</div>
+		
+		<div class="skill">
+		  <span>Information Systems</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+		</div>
+		
+		<div class="skill">
+		  <span>Artificial Intelligence Utilization</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
+		</div>
+
+		<div class="skill">
+		  <span>Financial Systems</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 80%;">80%</div></div>
+		</div>
+
+		<div class="skill">
+		  <span>Coding: Python, Java, SQL, HTML</span>
+		  <div class="skill-bar"><div class="skill-level" style="width: 75%;">75%</div></div>
+		</div>
+		
 	</div>
   </section>
 
@@ -183,8 +232,8 @@
 	<div class="overlay">
 		<h2>Education & Certifications</h2>
 		<ul>
-		  <li><strong>BSc Information Technology</strong> - North West University (2022–2025)</li>
-		  <li><strong>Matriculated</strong> - Windhoek Gymnasium (2016)</li>
+		  <li><strong>BSc Information Technology</strong> — North West University (2022–2025)</li>
+		  <li><strong>Matriculated</strong> — Windhoek Gymnasium (2016)</li>
 		  <li><strong>Short Courses:</strong>
 			<ul>
 			  <li>BW Learning & Development: Duty of Care & Teller</li>
