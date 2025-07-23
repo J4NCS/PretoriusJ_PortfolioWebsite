@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- The webpage needs to support almost all characters and symbols on multiple devices -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Import font and icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<!-- Browser tab title -->
 		<title>Janco Portfolio</title>
+		
+		<!-- Styles for the webpage -->
 		<style>
 			body {
 				font-family: Arial, sans-serif;
@@ -26,6 +31,8 @@
   				text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff;
 			}
 
+			/* Pulse animation for the header */
+			/* This will create a glowing effect on the header text */
 			@keyframes pulse {
 				0%, 100% {
 					text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff;
@@ -47,6 +54,7 @@
 				border-radius: 8px;
 			}
 			
+			/* These help style the skills section */
 			.skill {
 				margin-bottom: 1.5rem;
 			}
@@ -76,7 +84,7 @@
 				transition: width 1s ease-in-out;
 			}
 
-			/* Flex layout for about section */
+			/* Flex layout for side sections */
 			.side-section {
   				display: flex;
   				flex-wrap: wrap;
@@ -85,12 +93,10 @@
   				gap: 2rem;
 			}
 
-			/* Control the text side */
 			.about-text {
 				flex: 1 1 60%;
 			}
 
-			/* Reuse profile-img class */
 			.profile-img {
 				width: 250px;
 				height: auto;
@@ -99,7 +105,7 @@
 				box-shadow: 0 0 15px rgba(0,0,0,0.5);
 			}
 
-			/* Make it responsive */
+			/* Makes the layout responsive on smaller screens */
 			@media screen and (max-width: 768px) {
 				.side-section {
 					flex-direction: column;
@@ -112,6 +118,7 @@
 				}
 			}
 
+			/* Styles for the job experience section */
 			.job {
 				margin-bottom: 2rem;
 				border-left: 3px solid #00c6ff;
@@ -138,6 +145,7 @@
 				margin-top: 0.5rem;
 			}
 
+			/* Styles for the tech stack */
 			.tech-stack span {
 				display: inline-block;
 				background: #00c6ff;
@@ -165,9 +173,9 @@
 				background: #0090cc;
 			}
 
-			/* Background image for the About Me section */
+			/* Styling for the elements in the virtual CV */
 			#about {
-				background-color: #fff; /* fallback */
+				background-color: #fff;
 				padding: 2rem;
 				margin: 1rem;
 				border-radius: 8px;
@@ -179,31 +187,29 @@
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
-				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				background-color: rgba(0, 0, 0, 0.6);
 				color: white;
 			}
 			
-			/* Background image for the Experience section */
-			#projects {
-				background-color: #fff; /* fallback */
+			#occupation {
+				background-color: #fff;
 				padding: 2rem;
 				margin: 1rem;
 				border-radius: 8px;
 				position: relative;
 			}
 
-			#projects .overlay {
+			#occupation .overlay {
 				background: url('https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/Background%202.jpg?raw=true') center/cover no-repeat;
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
-				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				background-color: rgba(0, 0, 0, 0.6);
 				color: white;
 			}
 			
-			/* Background image for the Skills section */
 			#skills {
-				background-color: #fff; /* fallback */
+				background-color: #fff;
 				padding: 2rem;
 				margin: 1rem;
 				border-radius: 8px;
@@ -215,13 +221,12 @@
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
-				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				background-color: rgba(0, 0, 0, 0.6);
 				color: white;
 			}
 			
-			/* Background image for the Education section */
 			#education {
-				background-color: #fff; /* fallback */
+				background-color: #fff;
 				padding: 2rem;
 				margin: 1rem;
 				border-radius: 8px;
@@ -233,13 +238,12 @@
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
-				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				background-color: rgba(0, 0, 0, 0.6);
 				color: white;
 			}
 			
-			/* Background image for the Contact section */
 			#contact {
-				background-color: #fff; /* fallback */
+				background-color: #fff;
 				padding: 2rem;
 				margin: 1rem;
 				border-radius: 8px;
@@ -251,25 +255,26 @@
 				padding: 2rem;
 				border-radius: 8px;
 				background-blend-mode: darken;
-				background-color: rgba(0, 0, 0, 0.6); /* darkens image directly */
+				background-color: rgba(0, 0, 0, 0.6);
 				color: white;
 			}
 		</style>
 	</head>
 
 	<body>
-		<header>
+		<header id = "top"> <!-- This helps with the back to top button -->
 			<h1>Janco Pretorius</h1>
+			<!-- Clicking on any of these will take you to their sections -->
 			<nav>
 				<a href="#about">About Me</a>
-				<a href="#projects">Experience</a>
+				<a href="#occupation">Experience</a>
 				<a href="#skills">Skills</a>
 				<a href="#education">Education</a>
 				<a href="#contact">Contact</a>
 			</nav>
 		</header>
 
-		<section id="about" class="side-section">
+		<section id="about" class="side-section"> <!-- The about section needs the side-section for the image -->
   			<div class="overlay about-text">
     			<h2>About Me</h2>
     			<p>
@@ -286,7 +291,7 @@
   			<img src="https://github.com/J4NCS/PretoriusJ_PortfolioWebsite/blob/main/JancoImage.jpg?raw=true" alt="Janco Pretorius" class="profile-img">
 		</section>
 
-		<section id="projects">
+		<section id="occupation"> <!-- Section highlighting work experience, with "download CV" button -->
 			<div class="overlay">
 				<h2>Work Experience</h2>
 				<div class="job">
@@ -348,7 +353,7 @@
 			</div>
 		</section>
 
-		<section id="skills">
+		<section id="skills"> <!-- Section highlighting my skills and the affinity for technology -->
 			<div class="overlay">
 				<h2>Skills</h2>
 				<div class="skill">
@@ -383,7 +388,7 @@
 			</div>
 		</section>
 
-		<section id="education">
+		<section id="education"> <!-- Section highlighting education and certifications -->
 			<div class="overlay">
 				<h2>Education & Certifications</h2>
 				<ul>
@@ -409,7 +414,7 @@
 			</div>
 		</section>
 
-		<section id="contact">
+		<section id="contact"> <!-- Section highlighting contact information with a "back to top" button -->
 			<div class="overlay">
 				<h2>Contact</h2>
 				<p>
@@ -425,6 +430,20 @@
 						<i class="fab fa-linkedin"></i> linkedin.com/in/janco-pretorius
 					</a>
 				</p>
+
+				<a href="#top" style="
+					display:inline-block;
+					margin-top:2rem;
+					padding:10px 20px;
+					background-color:#00c6ff;
+					color:white;
+					text-decoration:none;
+					border-radius:8px;
+					font-weight:bold;
+					transition:background 0.3s ease;
+				">
+					Back to Top
+				</a>
 			</div>
 		</section>
 
